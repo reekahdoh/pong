@@ -1,6 +1,6 @@
-		var c = document.getElementById("game-canvas");
-		var ctx = c.getContext("2d");
-		
+		var gameCanvas = document.getElementById("game-canvas");
+		var ctx = gameCanvas.getContext("2d");
+		var canvasColour = "white";
 		var paddleLeft = {
 			x: 10,
 			y: 40,
@@ -10,7 +10,7 @@
 		};
 
 		var paddleRight = {
-			x: c.width - 18,
+			x: gameCanvas.width - 18,
 			y: 40,
 			width: 8,
 			height: 120,
@@ -43,7 +43,7 @@
 		/* Function to clear paddles from their current position 
 		by painting over them with the canvas background colour */
 		var clearPaddles = function(paddles) {
-			ctx.fillStyle = "white"; //TODO: set to canvas colour
+			ctx.fillStyle = canvasColour; 
 			paddles.forEach(function(paddle) {
 				ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
 			});
