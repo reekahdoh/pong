@@ -1,4 +1,4 @@
-		var c = document.getElementById("gameCanvas");
+		var c = document.getElementById("game-canvas");
 		var ctx = c.getContext("2d");
 		
 		var paddleLeft = {
