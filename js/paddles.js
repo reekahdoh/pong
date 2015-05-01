@@ -50,7 +50,7 @@
 		};
 
 		 //Function to handle movement of mouse
-		function handleMouseMove(event) {
+		function movePaddles(event) {
 			clearPaddles(paddles);
 			updatePaddles(event.clientY, paddles);
 			drawPaddles(paddles);
