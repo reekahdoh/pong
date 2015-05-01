@@ -1,14 +1,17 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/canvas.css">
 	</head>
 	<body>
-	    	<canvas id="game-canvas" width="1000" height="600" onmousemove="handleMouseMove(event)">
+	    	<canvas id="game-canvas" width="1000" height="500" onmousemove="moveBall(event); movePaddles(event)">
 				If you can see this message, your browser is not supported.
 			</canvas>
     </body>
 	
 	<footer>
+		<script type="text/javascript" src="js/collision-detection.js"></script>
 		<script type="text/javascript" src="js/paddles.js"></script>
+		<script type="text/javascript" src="js/ball.js"></script>
 	</footer>
 </html>
